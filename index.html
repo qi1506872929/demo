@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>重构测试</title>
+</head>
+
+<body>
+    <!-- 外壳，设置容器高度和背景图片 -->
+    <div class="shell">
+        <!-- 页面内容，设置宽度和居中 -->
+        <div class="content">
+            <!-- 文章内容部分 -->
+            <article>
+                <!-- 活动时间和登录提示 -->
+                <div class="tips_title">
+                    <p class="title">活动时间：2017年2月13日到2月18日</p>
+                    <p class="login">您好，请<a href="#">登录</a></p>
+                </div>
+                <!-- 礼包 -->
+                <section class="gift_bag">
+                    <!-- 标题 -->
+                    <div class="section_title clearfix">
+                        <!-- 左边图标 -->
+                        <div class="left_image left"></div>
+                        <!-- 标题内容 -->
+                        <div class="bag_text">
+                            <span class="text1 left"></span>
+                            <span class="text2">月生日礼包</span>
+                        </div>
+                        <!-- 右边图标 -->
+                        <div class="right_image right"></div>
+                    </div>
+                    <!-- 列表项 -->
+                    <div class="bag_item">
+                        <div class="item">
+                            <div class="item_icon">
+                                <div class="icon_content">
+                                    <img src="./images/BEST100.png"
+                                        alt="BEST 100">
+                                </div>
+                                <div class="icon_light"></div>
+                                <div class="icon_base"></div>
+                                <div class="icon_shadow"></div>
+                            </div>
+                            <div class="item_text">
+                                <span>16EC巨星3强BEST 100(含UL 1强）*1</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_icon">
+                                <div class="icon_content">
+                                    <img src="./images/BEST100.png"
+                                        alt="BEST 100">
+                                </div>
+                                <div class="icon_light"></div>
+                                <div class="icon_base"></div>
+                                <div class="icon_shadow"></div>
+                            </div>
+                            <div class="item_text">
+                                <span>16EC巨星3强BEST 100(含UL 1强）*1</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_icon">
+                                <div class="icon_content">
+                                    <img src="./images/BEST100.png"
+                                        alt="BEST 100">
+                                </div>
+                                <div class="icon_light"></div>
+                                <div class="icon_base"></div>
+                                <div class="icon_shadow"></div>
+                            </div>
+                            <div class="item_text">
+                                <span>16EC巨星3强BEST 100(含UL 1强）*1</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_icon">
+                                <div class="icon_content">
+                                    <img src="./images/BEST100.png"
+                                        alt="BEST 100">
+                                </div>
+                                <div class="icon_light"></div>
+                                <div class="icon_base"></div>
+                                <div class="icon_shadow"></div>
+                            </div>
+                            <div class="item_text">
+                                <span>16EC巨星3强BEST 100(含UL 1强）*1</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_icon">
+                                <div class="icon_content">
+                                    <img src="./images/BEST100.png"
+                                        alt="BEST 100">
+                                </div>
+                                <div class="icon_light"></div>
+                                <div class="icon_base"></div>
+                                <div class="icon_shadow"></div>
+                            </div>
+                            <div class="item_text">
+                                <span>16EC巨星3强BEST 100(含UL 1强）*1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 按钮 -->
+                    <div class="button">
+                        <button>一键领取<span>3月</span>生日礼包</button>
+                    </div>
+                </section>
+                <!-- 折扣 -->
+                <section class="discount">
+                    <!-- 标题 -->
+                    <div class="section_title clearfix">
+                        <!-- 左边图标 -->
+                        <div class="left_image left"></div>
+                        <!-- 皇冠图标 -->
+                        <div class="crown_icon"></div>
+                        <!-- 标题内容 -->
+                        <div class="bag_text">
+                            <span class="text2">礼包折扣优惠</span>
+                        </div>
+                        <!-- 右边图标 -->
+                        <div class="right_image right"></div>
+                    </div>
+                    <!-- 提示信息 -->
+                    <div class="discount_tips">
+                        <p class="refresh_time">
+                            <span>礼包刷新倒计时：</span>1小时33分33秒
+                        </p>
+                        <!-- 按钮 -->
+                        <div class="button">
+                            <button>抽取神秘折扣</button>
+                        </div>
+                        <p class="other_tips">
+                            <a href="#">查看我的购买记录</a> <br>
+                            <span>[每日16:00和24:00将重新抽取折扣并刷新礼包]</span>
+                        </p>
+                    </div>
+                    <!-- 列表项 -->
+                    <div class="discount_item">
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="./images/EP.png" alt="金币" />
+                                <span>14经典巨星混合BEST200 （包含传奇）*1</span>
+                                <div class="img_tips">
+                                    <p>LP巨星3强BEST100（含UL 1强）*5</p>
+                                    <p>16EC巨星3强BEST100(含UL 1强)*5</p>
+                                    <p>CP巨星（3强）BEST100（含UL 1强）*5</p>
+                                    <p>最佳赛季巨星3强BEST100（含UL 1强）*5</p>
+                                </div>
+                            </div>
+                            <div class="item_tips">
+                                <del>原价：？？Q币</del> <br>
+                                <span>现价：？？Q币</span>
+                            </div>
+                            <div class="discount_button active">
+                                <button>已购买</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="./images/EP.png" alt="金币" />
+                                <span>14经典巨星混合BEST200 （包含传奇）*1</span>
+                            </div>
+                            <div class="item_tips">
+                                <del>原价：？？Q币</del> <br>
+                                <span>现价：？？Q币</span>
+                            </div>
+                            <div class="discount_button">
+                                <button>立即购买</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="./images/EP.png" alt="金币" />
+                                <span>14经典巨星混合BEST200 （包含传奇）*1</span>
+                            </div>
+                            <div class="item_tips">
+                                <del>原价：？？Q币</del> <br>
+                                <span>现价：？？Q币</span>
+                            </div>
+                            <div class="discount_button">
+                                <button>立即购买</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="./images/EP.png" alt="金币" />
+                                <span>14经典巨星混合BEST200 （包含传奇）*1</span>
+                            </div>
+                            <div class="item_tips">
+                                <del>原价：？？Q币</del> <br>
+                                <span>现价：？？Q币</span>
+                            </div>
+                            <div class="discount_button">
+                                <button>立即购买</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="./images/EP.png" alt="金币" />
+                                <span>14经典巨星混合BEST200 （包含传奇）*1</span>
+                            </div>
+                            <div class="item_tips">
+                                <del>原价：？？Q币</del> <br>
+                                <span>现价：？？Q币</span>
+                            </div>
+                            <div class="discount_button">
+                                <button>立即购买</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="./images/EP.png" alt="金币" />
+                                <span>14经典巨星混合BEST200 （包含传奇）*1</span>
+                            </div>
+                            <div class="item_tips">
+                                <del>原价：？？Q币</del> <br>
+                                <span>现价：？？Q币</span>
+                            </div>
+                            <div class="discount_button">
+                                <button>立即购买</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <!-- 页脚 -->
+            <footer>
+                <!-- 页脚标题 -->
+                <div class="footer_title clearfix">
+                    <!-- 左边图标 -->
+                    <div class="left_image left"></div>
+                    <!-- 标题内容 -->
+                    <div class="footer_text">
+                        <span class="text2">活动规则</span>
+                    </div>
+                    <!-- 右边图标 -->
+                    <div class="right_image right"></div>
+                </div>
+                <!-- 页脚文本内容 -->
+                <div class="footer_content">
+                    <div class="content_item">
+                        <i class="item_icon"></i><span class="item_text">活动时间：2018年1月17日—1月31日23:59</span>
+                    </div>
+                    <div class="content_item">
+                        <i class="item_icon"></i><span class="item_text">在2017年1月31日前成功注册游戏角色的玩家可在页面领取1月生日礼包1个;</span>
+                    </div>
+                    <div class="content_item">
+                        <i class="item_icon"></i><span class="item_text">在2017年1月31日前成功注册游戏角色的玩家可在页面领取1月生日礼包1个;</span>
+                    </div>
+                    <div class="content_item">
+                        <i class="item_icon"></i><span class="item_text">在2017年1月31日前成功注册游戏角色的玩家可在页面领取1月生日礼包1个;</span>
+                    </div>
+                    <div class="content_item">
+                        <i class="item_icon"></i><span class="item_text">在2017年1月31日前成功注册游戏角色的玩家可在页面领取1月生日礼包1个;</span>
+                    </div>
+                    <div class="content_item">
+                        <i class="item_icon"></i><span class="item_text">在2017年1月31日前成功注册游戏角色的玩家可在页面领取1月生日礼包1个;</span>
+                    </div>
+                    <div class="content_item">
+                        <i class="item_icon"></i><span class="item_text">在2017年1月31日前成功注册游戏角色的玩家可在页面领取1月生日礼包1个;</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
